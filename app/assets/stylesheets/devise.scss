@@ -1,0 +1,66 @@
+.devise-top-image {
+  height: 298px;
+  img {
+    width: 100%;
+    height: 298px;
+  }
+}
+.devise {
+  width: 100%;
+  height: 100%;
+}
+.devise-page-inner {
+  margin: 33px 17px 60px;
+}
+.field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+input {
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  outline: 0;
+  border-bottom: 1px solid #9E9E9E;
+}
+.new_user {
+  label {
+    font-size: 0.9rem;
+    color: #979797;
+  }
+}
+
+em {
+  font-size: 0.9rem;
+  color: #979797;
+}
+
+.actions,.actions-login {
+  margin-top: 70px;
+  input {
+    width: 100%;
+    height: 48px;
+    background-color: #FFE600;
+    font-size: 1.1rem;
+    border-bottom: none;
+  }
+}
+.actions-login {
+  margin-top: 140px;
+  
+}
+
+.forgot {
+  text-align: end;
+  a {
+    color: #CCCCCC;
+    font-size: 0.9rem;
+  }
+}
+
+.devise-move {
+  position: absolute;
+  left: 17px;
+  bottom: 15px;
+}
