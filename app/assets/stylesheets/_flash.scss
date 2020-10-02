@@ -1,0 +1,14 @@
+.flash {
+  position: fixed;
+  top: 0;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  &__alert{
+    background-color: red;
+  }
+  &__notice {
+    background-color: blue;
+  }
+}
