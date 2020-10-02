@@ -10,7 +10,7 @@
   height: 100%;
 }
 .devise-page-inner {
-  margin: 33px 17px 60px;
+  margin: 33px 17px 40px;
 }
 .field {
   width: 100%;
@@ -38,6 +38,7 @@ em {
 
 .actions,.actions-login {
   margin-top: 70px;
+  margin-bottom: 40px;
   input {
     width: 100%;
     height: 48px;
@@ -60,7 +61,5 @@ em {
 }
 
 .devise-move {
-  position: absolute;
-  left: 17px;
-  bottom: 15px;
+  
 }
