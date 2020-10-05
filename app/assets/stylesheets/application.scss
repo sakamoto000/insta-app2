@@ -1,5 +1,5 @@
 @import 'devise';
-// @import 'profile';
+@import 'profile';
 @import '_flash';
 
 html {
@@ -30,4 +30,39 @@ a {
   margin: 0 15px;
   height: auto;
   overflow: auto;
+}
+
+.input__area {
+  text-align: center;
+  position: relative;
+}
+img #image-preview {
+}
+.input__area img {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  
+}
+
+.input__area input {
+  display: none;
+}
+
+label {
+  text-align: center;
+}
+
+.input-button {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
 }

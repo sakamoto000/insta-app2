@@ -1,0 +1,40 @@
+.container
+  .profile-header
+    .back-btn
+      = image_tag 'back.png'
+    %p.profile-username 
+      = current_user.name
+  .input__area
+    %img#image-preview{:src => "assets/default-avatar.png"}/
+    %label.input-button
+      %input#image{:type => "file"}/
+  .user-information
+    %ul.user-effort
+      %li.first
+        .number
+          0
+        .posts
+          Posts
+      %li
+        .number
+          0
+        .followers
+          Followers
+      %li
+        .number
+          0
+        .following
+          Following
+    .user-introduction
+      .user-introduction-inner
+        %p
+    .user-posts
+      .user-posts-inner
+        .posts-image= image_tag 'Rectangle (1).jpg'
+        .posts-image= image_tag 'Rectangle (2).jpg'
+        .posts-image= image_tag 'Rectangle (3).jpg'
+        .posts-image= image_tag 'Rectangle (4).jpg'
+        .posts-image= image_tag 'Rectangle (5).jpg'
+        .posts-image= image_tag 'Rectangle (6).jpg'
+
+= javascript_pack_tag 'home/test'
