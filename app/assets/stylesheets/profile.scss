@@ -1,0 +1,117 @@
+.profile-header {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+.back-btn {
+  float: left;
+  img {
+    width: 40px;
+  }
+}
+.profile-username {
+  position: absolute;
+  margin: 0;
+  top: 46px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.profile-user-avatar {
+  text-align: center;
+  margin-top: 20px;
+  img {
+    width: 76.88px;
+  }
+}
+
+ul.user-effort {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
+  li {
+    display: inline-block;
+    margin-left: 37px;
+  }
+  li.first {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .number {
+    font-size: 1.6rem;
+  }
+  .posts,.followers,.following {
+    font-size: 1.4rem;
+    color: #9E9E9E;
+  }
+}
+
+.user-posts {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  .user-posts-inner {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.posts-image {
+  // height: 92px;
+ img {
+   width: 100%;
+   height: 100%;
+ }
+}
+.user-introduction {
+  margin-bottom: 15px;
+  text-justify: inter-ideograph;
+}
+.user-introduction-inner {
+  margin: 0 50px;
+  text-align: justify;
+  p {
+    font-size: 1.2rem;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+  }
+}
+
+.edit-profile {
+  margin: 30px 20px 20px;
+  font-size: 1.2rem;
+  color: #9E9E9E;
+  textarea {
+    border: none;
+    border-bottom: solid #9E9E9E 1px;
+    width: 100%;
+  }
+  .gender {
+    margin-top: 10px;
+  }
+  .birthday {
+    margin-top: 5px;
+  }
+  .btn-primary {
+    margin-top: 60px;
+    border: none;
+    height: 45px;
+  }
+}
+.profile-edit-btn {
+  background-color: rgb(191, 191, 191);
+  text-align: center;
+  padding: 4px 0;
+  a {
+    display: block;
+    color: #ffffff;
+  }
+}
+

@@ -1,0 +1,53 @@
+.container
+  .profile-header
+    .back-btn
+      = image_tag 'back.png'
+    %p.profile-username 
+      = current_user.profile.nickname 
+  .input__area
+    %img#image-preview{:src => "assets/default-avatar.png"}/
+    %label.input-button
+      %input#image{:name => "image",:type => "file"}/ 
+  -# .input__area
+  -#   - if user_signed_in?
+  -#     %img#image-preview{:src => "/user_images/#{@user.user_image}"}
+  -#   -else
+  -#     %img#image-preview{:src => "assets/default-avatar.png"}/
+  -#   = form_tag("/users/update", {multipart:true}) do
+  -#     %label.input-button
+  -#       %input#image{:name => "image",:type => "file"}/
+  .user-information
+    %ul.user-effort
+      %li.first
+        .number
+          0
+        .posts
+          Posts
+      %li
+        .number
+          0
+        .followers
+          Followers
+      %li
+        .number
+          0
+        .following
+          Following
+    .user-introduction
+      .user-introduction-inner
+        %p
+          = current_user.profile.introduction
+    .profile-edit-btn
+      = link_to 'プロフィール編集', edit_profile_path
+    .user-posts
+      .user-posts-inner
+        .posts-image= image_tag 'Rectangle (1).jpg'
+        .posts-image= image_tag 'Rectangle (2).jpg'
+        .posts-image= image_tag 'Rectangle (3).jpg'
+        .posts-image= image_tag 'Rectangle (4).jpg'
+        .posts-image= image_tag 'Rectangle (5).jpg'
+        .posts-image= image_tag 'Rectangle (6).jpg'
+
+= javascript_pack_tag 'home/test'
+-# "assets/default-avatar.png"
+-# "/user_images/#{@user.image_name}"
