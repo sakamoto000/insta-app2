@@ -5,6 +5,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   validates :name,
     uniqueness: { case_sensitive: :false }
-  
+
   has_one :profile, dependent: :destroy
+
+  def prepare_profile
+    profile || build_profile
+  end
 end
