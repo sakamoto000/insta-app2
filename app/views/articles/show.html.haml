@@ -1,0 +1,29 @@
+.container
+  .article
+    .articles-inner
+      .user-icon
+        = image_tag 'default-avatar.png'
+        %span.user-name
+          = current_user.profile.nickname
+        %span.post-time
+          30分前
+      .post-image
+        .post-image-inner
+          = image_tag 'Rectangle (4).jpg'
+      %ul.post-btns
+        %li
+          .heart-btn
+            = image_tag 'Vector.jpg'
+        %li
+          .comment-btn
+            = image_tag 'Vector.png'
+        %li
+          .share-btn
+            = image_tag 'Vector (1).png'
+      .heart-information
+        いいね！：yamada,yoshida, 他
+      .article-information
+        = current_user.profile.nickname
+        = @article.content
+      .comment-view
+        コメント表示

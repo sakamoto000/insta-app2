@@ -1,6 +1,7 @@
 @import 'devise';
 @import 'profile';
 @import '_flash';
+@import 'article';
 
 html {
   width: 100%;
@@ -20,10 +21,13 @@ body {
 }
 li, ul{
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
+
 a {
   text-decoration: none;
-  
+  color: #111111;
 }
 
 .container {
