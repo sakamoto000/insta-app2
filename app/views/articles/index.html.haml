@@ -2,7 +2,8 @@
   .timeline
     .timeline-inner
       .post-btn
-        = image_tag 'photo-camera.png'
+        = link_to new_article_path do
+          = image_tag 'photo-camera.png'
       - @articles.each do |article|
         = link_to article_path(article) do
           .article
@@ -12,7 +13,7 @@
                 %span.user-name
                   = current_user.profile.nickname
                 %span.post-time
-                  30分前
+                  = time_ago_in_words(article.updated_at, include_seconds: true)+"前"
               .post-image
                 .post-image-inner
                   = image_tag 'Rectangle (4).jpg'
@@ -33,16 +34,11 @@
                 = article.content
               .comment-view
                 コメント表示
-          
-
+              
+              
 
 - if user_signed_in?
   = link_to "ログアウト", destroy_user_session_path, method: :delete
 - else
   = link_to "新規登録", new_user_registration_path
-  = link_to "ログイン", new_user_session_path
-
-
-
-
-
+  = link_to "ログイン", new_user_session_pat

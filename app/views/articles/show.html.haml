@@ -6,7 +6,7 @@
         %span.user-name
           = current_user.profile.nickname
         %span.post-time
-          30分前
+          = time_ago_in_words(@article.updated_at, include_seconds: true)+"前"
       .post-image
         .post-image-inner
           = image_tag 'Rectangle (4).jpg'
@@ -22,8 +22,12 @@
             = image_tag 'Vector (1).png'
       .heart-information
         いいね！：yamada,yoshida, 他
-      .article-information
+      .article-show-information
         = current_user.profile.nickname
         = @article.content
       .comment-view
         コメント表示
+      .edit-btn
+        = link_to '編集する', edit_article_path(@article)
+      .delete-btn
+        = link_to '削除する', article_path(@article), data: { method: 'delete', confirm: '本当に削除してもよろしいですか？'}

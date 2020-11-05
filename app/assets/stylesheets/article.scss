@@ -56,3 +56,14 @@ ul.post-btns {
 .comment-view{
   color: rgba(181, 181, 181, 0.886);
 }
+
+.article_new_content {
+  margin: 30px 20px 20px;
+  font-size: 1.2rem;
+  color: #9E9E9E;
+  textarea {
+    border: none;
+    border-bottom: solid #9E9E9E 1px;
+    width: 100%;
+  }
+}
