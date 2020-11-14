@@ -11,7 +11,8 @@
               .user-icon
                 = image_tag 'default-avatar.png'
                 %span.user-name
-                  = current_user.profile.nickname
+                  - if article.user.present?
+                    = article.user.display_name
                 %span.post-time
                   = time_ago_in_words(article.updated_at, include_seconds: true)+"前"
               .post-image
@@ -30,7 +31,7 @@
               .heart-information
                 いいね！：yamada,yoshida, 他
               .article-information
-                = current_user.profile.nickname
+                = article.auther_name
                 = article.content
               .comment-view
                 コメント表示
